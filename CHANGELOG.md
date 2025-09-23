@@ -8,6 +8,15 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.09.23]
+
+### Added
+
+- Designed a Soup component
+- Designed a Ouiji Board component
+- Designed a Tamagotchi component
+
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project

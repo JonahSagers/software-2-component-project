@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Jonah
+- **Dot Number**: Sagers.3
+- **Due Date**: 09/19
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,16 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I love game design!! Whether I end up working indie or with a big studio depends on how my college years go, but I just love any coding where I can work in 3d space. Currently I do simulation design for OSU, and that fills a similar niche but eventually I want to make something that people can actually enjoy.
+I haven't had as much time for hobbies this year, but I love spending time in the OSU maker space, doing modular origami, and exploring around Columbus.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,8 +116,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +183,81 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: `Soup`
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - This component slowly mixes together integer inputs into an average output. Every time the soup is stirred, the input values all shift to be closer to the average value. Values in the soup cannot directly be queried, but a random selection can be served from it, removing that value from the soup.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void add(int ingredient)`: adds `ingredient` to `this`
+    - `int serve()`: removes a random `ingredient` from `this`
+    - `int taste()`: returns the average value of `this`
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void combine(Soup s)`: adds all incredients from `s` to `this` and clears `s`
+    - `void stir(int count)`: all values inside `this` become closer to the average of this `this` by `count`
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes! The soup must group (after being instantiated)
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Ideally, soup would be implemented using `Set` because the order is unimportant, but a list of ingredients is
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No I don't think so, it's just soup
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Absolutely. Stir relies on first tasting the soup, serving each ingredient, modifying its value, and then re-adding it to the soup. This may be very unsanitary, but it makes for great soup.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: `OuijiBoard`
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Contains a random string which is inaccessible except by guessing letters. Once the correct letter is guessed, the letter index will advance, looping around once the whole word is guessed.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - `void add(char c)`: appends `c` to `this`
+    - `int distance(char c)`: returns the difference in char value between `c` and `this` at the current `index`
+    - `void advance()`: increases `index` by 1, modulus the total length of `this`
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `int guess(char c)`: returns either -1, 0, or 1 depending on whether the char value of `c` is smaller, equal to, or larger than `this` at the current `index`. If the correct character is guessed, advances `index`.
+    - `void exorcise()`: replaces the existing keyword with another keyword of random length and also prints the screams of the damned to the console
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I think so? The keyword string would be changed by exorcism, and the index has to change every time a letter is guessed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Nope! Just a String for the keyword.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't think so. Unless the index counter is considered that.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes! For example, guess calls distance for checking if your guess was right, and then calls advance if you get it right.
+
+- Component Design #3: Tamagotchi
+  - **Description**:
+    - A virtual pet that keeps your java program company so that it doesn't get lonely. Make sure to keep it fed.
+  - **Kernel Methods**:
+    - `int hungerMod(int amount)`: modifies `hunger` of `this` by `amount`
+    - `int happyMod(int amount)`: modifies `happiness` of `this` by `amount`
+    - `boolean alive()`: returns `alive` of `this`
+    - `void aliveMod(boolean value)`: sets `alive` of `this`
+
+  - **Secondary Methods**:
+    - `int feed()`: adds to the `hunger` of `this` by a set amount
+    - `int pet()`: adds to the `happiness` of `this` by a set amount
+    - `void tick()`: decreases the `hunger` and `happiness` of `this` by a set amount, maybe this should be automatically run with other functions?
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes! Hunger and happiness both change during runtime.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Nope! Just two integers and a bool.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - Constant may be needed for the speed at which hunger and happiness decay, as well as how much pet and feed restore.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Of course. Tick calls both hungerMod and then happyMod, then checks if hunger and happiness are low enough to run aliveMod.
 
 ## Post-Assignment
 
@@ -309,7 +305,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -318,8 +313,6 @@ created for you automatically every time you save, so just double check that
 all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
-
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
