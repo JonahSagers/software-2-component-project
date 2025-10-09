@@ -8,6 +8,14 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.09]
+
+### Added
+
+- Designed a proof of concept for OuijiBoard component
+- Implemented Kernel methods add, distance, and advance for OuijiBoard
+- Implemented Secondary method guess for OuijiBoard
+
 ## [2025.09.23]
 
 ### Added
