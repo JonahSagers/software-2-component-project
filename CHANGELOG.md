@@ -8,6 +8,13 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.6]
+
+- Implemented secondary methods in OuijiBoardSecondary abstract class
+- Added word bank to OuijiBoard
+- Changed the exorcise method to take a SimpleWriter and random as params
+- Will find out later if I'm actually allowed to use the standard java random library
+
 ## [2025.10.26]
 
 ### Added
