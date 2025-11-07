@@ -12,11 +12,18 @@ public interface OuijiBoard extends OuijiBoardKernel {
      *            the character to guess
      * @return -1 for smaller, 0 for equal, 1 for larger than the current
      *         character
+     * @ensures <pre>
+     *  [this.spirit is not null]
+     * </pre>
      */
     int guess(char c);
 
     /**
      * Purge the spirit from this plane (select a new word).
+     *
+     * @ensures <pre>
+     *  [this.spirit will have unguessed letters]
+     * </pre>
      */
     void exorcise();
 

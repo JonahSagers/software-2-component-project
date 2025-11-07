@@ -13,6 +13,9 @@ public interface OuijiBoardKernel {
      *
      * @param c
      *            the character to append
+     * @ensures <pre>
+     *  [this.spirit length > 0]
+     * </pre>
      */
     void add(char c);
 
