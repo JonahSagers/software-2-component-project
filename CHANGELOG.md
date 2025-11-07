@@ -8,6 +8,13 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.26]
+
+### Added
+
+- Designed kernel and enhanced interfaces for OuijiBoard component
+- The deeper we get into this project the less sure I am that I'm doing it right
+
 ## [2025.10.09]
 
 ### Added
