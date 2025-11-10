@@ -8,6 +8,13 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.10]
+
+- Added toString and equals override methods in OuijiBoardSecondary
+- Added equals method to OuijiBoard
+- Added getSpirit and setSpirit methods to OuijiBoardkernel
+- Removed global variables from OuijiBoardSecondary so that it's actually, y'know, an abstract class
+
 ## [2025.11.6]
 
 - Implemented secondary methods in OuijiBoardSecondary abstract class

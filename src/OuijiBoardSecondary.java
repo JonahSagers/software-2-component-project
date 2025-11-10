@@ -5,12 +5,7 @@ import components.simplewriter.SimpleWriter;
 /**
  * OuijiBoard data type.
  */
-public class OuijiBoardSecondary implements OuijiBoard {
-
-    /**
-     * The word inside the board.
-     */
-    private String spirit;
+public abstract class OuijiBoardSecondary implements OuijiBoard {
 
     /**
      * Check whether the guessed character is equal to, smaller than, or larger
@@ -54,9 +49,20 @@ public class OuijiBoardSecondary implements OuijiBoard {
          * Not entirely sure if I'm allowed to use the standard java random
          * library, will change in future assignments if required
          */
-        this.spirit = WORD_BANK[random.nextInt(WORD_BANK.length)];
-
+        this.setSpirit(WORD_BANK[random.nextInt(WORD_BANK.length)]);
         out.println("The board is set...");
+    }
+
+    @Override
+    public final String toString() {
+        StringBuilder result = new StringBuilder("(");
+        result.append(this.getSpirit());
+        return result.toString();
+    }
+
+    @Override
+    public final boolean equals(OuijiBoard otherBoard) {
+        return this.getSpirit().equals(otherBoard.getSpirit());
     }
 
 }

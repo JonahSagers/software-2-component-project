@@ -42,4 +42,17 @@ public interface OuijiBoard extends OuijiBoardKernel {
      */
     void exorcise(SimpleWriter out, Random random);
 
+    /**
+     * Check if the data of both boards is the same.
+     *
+     * @param otherBoard
+     *            The board to compare to
+     * @return Whether both boards share the same data
+     *
+     * @ensures <pre>
+     * [this.spirit exists for both boards]
+     * </pre>
+     */
+    boolean equals(OuijiBoard otherBoard);
+
 }

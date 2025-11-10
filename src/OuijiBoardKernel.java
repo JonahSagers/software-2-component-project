@@ -34,4 +34,20 @@ public interface OuijiBoardKernel {
      */
     void advance();
 
+    /**
+     * get the spirit value from the board, for access in secondary methods.
+     *
+     * @return this.spirit
+     */
+    String getSpirit();
+
+    /**
+     * sets the spirit value and returns the old value.
+     *
+     * @param newSpirit
+     *            the word to replace spirit with
+     * @return the old value of spirit
+     */
+    String setSpirit(String newSpirit);
+
 }
