@@ -9,6 +9,26 @@ public interface OuijiBoardKernel {
     String DEFAULT_WORD = "spirit";
 
     /**
+     * Create a new instance of OuijiBoard from OuijiBoard1L.
+     *
+     * @return the newly created instance
+     */
+    OuijiBoard newInstance();
+
+    /**
+     * Clear all data from this.
+     */
+    void clear();
+
+    /**
+     * Transfer data from source to this.
+     *
+     * @param source
+     *            the source to transfer from
+     */
+    void transferFrom(OuijiBoard source);
+
+    /**
      * Appends c to this.
      *
      * @param c
