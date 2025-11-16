@@ -8,6 +8,20 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.10]
+
+- Added toString and equals override methods in OuijiBoardSecondary
+- Added equals method to OuijiBoard
+- Added getSpirit and setSpirit methods to OuijiBoardkernel
+- Removed global variables from OuijiBoardSecondary so that it's actually, y'know, an abstract class
+
+## [2025.11.6]
+
+- Implemented secondary methods in OuijiBoardSecondary abstract class
+- Added word bank to OuijiBoard
+- Changed the exorcise method to take a SimpleWriter and random as params
+- Will find out later if I'm actually allowed to use the standard java random library
+
 ## [2025.10.26]
 
 ### Added
