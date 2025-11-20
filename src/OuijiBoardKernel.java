@@ -1,7 +1,9 @@
+import components.standard.Standard;
+
 /**
  * {@code OuijiBoardKernel} enhanced with secondary methods.
  */
-public interface OuijiBoardKernel {
+public interface OuijiBoardKernel extends Standard<OuijiBoard> {
 
     /**
      * Default word for initializing an un-haunted and lame ouiji board.
@@ -13,11 +15,13 @@ public interface OuijiBoardKernel {
      *
      * @return the newly created instance
      */
+    @Override
     OuijiBoard newInstance();
 
     /**
      * Clear all data from this.
      */
+    @Override
     void clear();
 
     /**
@@ -26,6 +30,7 @@ public interface OuijiBoardKernel {
      * @param source
      *            the source to transfer from
      */
+    @Override
     void transferFrom(OuijiBoard source);
 
     /**

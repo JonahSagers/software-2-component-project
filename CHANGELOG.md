@@ -8,6 +8,10 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.20]
+
+- Extend Standard from OuijiBoardKernel
+
 ## [2025.11.16]
 
 - Added OuijiBoard1L String implementation
