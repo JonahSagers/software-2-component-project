@@ -1,12 +1,37 @@
+import components.standard.Standard;
+
 /**
  * {@code OuijiBoardKernel} enhanced with secondary methods.
  */
-public interface OuijiBoardKernel {
+public interface OuijiBoardKernel extends Standard<OuijiBoard> {
 
     /**
      * Default word for initializing an un-haunted and lame ouiji board.
      */
     String DEFAULT_WORD = "spirit";
+
+    /**
+     * Create a new instance of OuijiBoard from OuijiBoard1L.
+     *
+     * @return the newly created instance
+     */
+    @Override
+    OuijiBoard newInstance();
+
+    /**
+     * Clear all data from this.
+     */
+    @Override
+    void clear();
+
+    /**
+     * Transfer data from source to this.
+     *
+     * @param source
+     *            the source to transfer from
+     */
+    @Override
+    void transferFrom(OuijiBoard source);
 
     /**
      * Appends c to this.
