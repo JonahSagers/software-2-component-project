@@ -1,3 +1,5 @@
+package components.ouijiboard;
+
 import java.util.Random;
 
 /**
@@ -26,7 +28,7 @@ public class OuijiBoard1L extends OuijiBoardSecondary {
      */
     private void createNewRep() {
         this.random = new Random();
-        this.spirit = WORD_BANK[this.random.nextInt(WORD_BANK.length)];
+        this.spirit = WORD_BANK[this.random.nextInt(WORD_BANK.length)] + "bye";
         this.index = 0;
     }
 
@@ -103,6 +105,18 @@ public class OuijiBoard1L extends OuijiBoardSecondary {
         String oldSpirit = this.spirit;
         this.spirit = newSpirit;
         return oldSpirit;
+    }
+
+    @Override
+    public final int getIndex() {
+        return this.index;
+    }
+
+    @Override
+    public final int setIndex(int newIndex) {
+        int oldIndex = this.index;
+        this.index = newIndex;
+        return oldIndex;
     }
 
 }

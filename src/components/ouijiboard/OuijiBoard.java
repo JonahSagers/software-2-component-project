@@ -1,3 +1,5 @@
+package components.ouijiboard;
+
 import java.util.Random;
 
 import components.simplewriter.SimpleWriter;

@@ -1,3 +1,5 @@
+package components.ouijiboard;
+
 import components.standard.Standard;
 
 /**
@@ -74,5 +76,21 @@ public interface OuijiBoardKernel extends Standard<OuijiBoard> {
      * @return the old value of spirit
      */
     String setSpirit(String newSpirit);
+
+    /**
+     * get the index value from the board, for access in secondary methods.
+     *
+     * @return this.index
+     */
+    int getIndex();
+
+    /**
+     * sets the index value and returns the old value.
+     *
+     * @param newIndex
+     *            the value to replace index with
+     * @return the old value of index
+     */
+    int setIndex(int newIndex);
 
 }

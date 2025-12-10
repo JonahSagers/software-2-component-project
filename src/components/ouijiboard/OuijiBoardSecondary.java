@@ -1,3 +1,5 @@
+package components.ouijiboard;
+
 import java.util.Random;
 
 import components.simplewriter.SimpleWriter;
@@ -49,13 +51,13 @@ public abstract class OuijiBoardSecondary implements OuijiBoard {
          * Not entirely sure if I'm allowed to use the standard java random
          * library, will change in future assignments if required
          */
-        this.setSpirit(WORD_BANK[random.nextInt(WORD_BANK.length)]);
+        this.setSpirit(WORD_BANK[random.nextInt(WORD_BANK.length)] + "bye");
         out.println("The board is set...");
     }
 
     @Override
     public final String toString() {
-        StringBuilder result = new StringBuilder("(");
+        StringBuilder result = new StringBuilder("");
         result.append(this.getSpirit());
         return result.toString();
     }
