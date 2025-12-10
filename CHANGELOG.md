@@ -8,6 +8,14 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+
+- Add test cases in OuijiBoardTest
+- Add getIndex and SetIndex methods to OuijiBoardKernel
+- Add "bye" to the end of every random spirit string
+- Add OuijiBoardGuesser use case
+- Add SafeCracker use case
+
 ## [2025.11.20]
 
 - Extend Standard from OuijiBoardKernel
