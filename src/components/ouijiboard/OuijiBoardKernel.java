@@ -1,12 +1,39 @@
+package components.ouijiboard;
+
+import components.standard.Standard;
+
 /**
  * {@code OuijiBoardKernel} enhanced with secondary methods.
  */
-public interface OuijiBoardKernel {
+public interface OuijiBoardKernel extends Standard<OuijiBoard> {
 
     /**
      * Default word for initializing an un-haunted and lame ouiji board.
      */
     String DEFAULT_WORD = "spirit";
+
+    /**
+     * Create a new instance of OuijiBoard from OuijiBoard1L.
+     *
+     * @return the newly created instance
+     */
+    @Override
+    OuijiBoard newInstance();
+
+    /**
+     * Clear all data from this.
+     */
+    @Override
+    void clear();
+
+    /**
+     * Transfer data from source to this.
+     *
+     * @param source
+     *            the source to transfer from
+     */
+    @Override
+    void transferFrom(OuijiBoard source);
 
     /**
      * Appends c to this.
@@ -49,5 +76,21 @@ public interface OuijiBoardKernel {
      * @return the old value of spirit
      */
     String setSpirit(String newSpirit);
+
+    /**
+     * get the index value from the board, for access in secondary methods.
+     *
+     * @return this.index
+     */
+    int getIndex();
+
+    /**
+     * sets the index value and returns the old value.
+     *
+     * @param newIndex
+     *            the value to replace index with
+     * @return the old value of index
+     */
+    int setIndex(int newIndex);
 
 }

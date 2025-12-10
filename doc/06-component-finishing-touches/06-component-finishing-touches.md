@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Jonah Sagers
+- **Dot Number**: Sagers.3
+- **Due Date**: 12/10
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,31 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+For software development as a whole, I love how the project is laid out to use git
+workflows and PRs and changelogs exactly like how I do at my job! I still hate java
+though. it's nice to know that now, instead of avoiding java because I don't get it,
+I can avoid java out of choice instead!
+A lot of people send me code abstracted to hell to get PR'd, and now I can begin
+to understand how it works and provide honest feedback.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I always complain about things but honestly this project was the first thing that
+was actually able to teach me how inheritence works. The whole concept of different
+implementations of a class didn't sit right with me in Software 1, but now I get
+its uses, and this approach has been invaluable to me in game development for programming
+enemy AI and such.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Dude if my entire perception of software development was based off of these classes
+I would switch to an art major. That being said, it was one of my best moments in
+the CSE curriculum to hold my component as something self-contained and functional,
+I made every part of it myself. This project absolutely does its job of giving students
+something to be proud of, and that's worth celebrating.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +335,38 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Software abstraction is the main thing I learned from this project, but as for general
+skills, I learned to lay out large projects in a manageable way, document my work clearly,
+and and follow sustainable workflows!
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Software Abstraction
+- Project Management
+- Workflow Adaptation
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+Gotta say I still wanna make games. This project gave me some great traction to
+get to work on my own personal projects though which is great!
+I plan to stick with software development in one form or another, most likely in
+game development.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+The mentors I trust most are my supervisors at OSU SimCenter who have been through
+the whole software process. On top of that, I find every networking event I can in
+Columbus, and most recently that's meant the Columbus Unity Developers Association.
+I got to meet OSU's Professor Crawfis as well as a few unity employees in a much
+closer environment than most of my classes.
+I know the job market sucks right now, but I'm not giving up, and I need to know
+as many people as possible to make it happen.
 
 ### Changelog
 

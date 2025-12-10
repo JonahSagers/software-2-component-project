@@ -3,6 +3,16 @@ import components.simplereader.SimpleReader1L;
 import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
+/*
+ * ----------------------------------------------------------------------------
+ * THIS FILE WILL NOT WORK IN THIS FOLDER probably.
+ *
+ * Since we're cleaning up the repo I moved this out of src
+ * ----------------------------------------------------------------------------
+ * /
+
+
+
 /**
  * OuijiBoard data type.
  */
